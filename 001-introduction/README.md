@@ -35,3 +35,17 @@ The tools are widely divided into two major categories
 
 - Community: Maintainers individual or organization account, e.g. DeviaVir/gsuite
 
+## Terraform requires explicit source information for any providers that are not Hashicorp-maintained, using a new syntax in the required_providers nested block inside the terraform configuration block:
+
+e.g.
+terraform {
+    required_providers {
+        digitalocean = {
+            source = "digitalocean/digitalocean"
+        }
+    }
+}
+
+provider "digital_ocean" {
+    token = "PUT-YOUR-TOKEN-HERE"
+}
