@@ -1,0 +1,7 @@
+# Conditional Expression Based on Use-Case
+
+- The syntax of a conditional expression is as follows:
+    - condition ? true_val : false_val
+
+- If condition is true then the result is true_val. If condition is false then the result is false_val.
+
